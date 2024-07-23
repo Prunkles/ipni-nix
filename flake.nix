@@ -12,6 +12,7 @@
       perSystem = { pkgs, ... }: {
         packages.ipni-storetheindex = pkgs.callPackage ./ipni-storetheindex.nix {};
         packages.ipni-index-provider = pkgs.callPackage ./ipni-index-provider.nix {};
+        packages.ipni-cli = pkgs.callPackage ./ipni-cli.nix {};
       };
     };
 }
