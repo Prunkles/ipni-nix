@@ -11,7 +11,7 @@
       systems = [ "x86_64-linux" "aarch64-linux" "aarch64-darwin" "x86_64-darwin" ];
       perSystem = { pkgs, ... }: {
         packages.ipni-storetheindex = pkgs.callPackage ./ipni-storetheindex.nix {};
-        packages.ipni-index-provider = pkgs.callPackage ./ipni-index-provider.nix {};
+        packages.ipni-index-provider = pkgs.callPackage ./packages/ipni-index-provider {};
         packages.ipni-cli = pkgs.callPackage ./ipni-cli.nix {};
       };
     };
